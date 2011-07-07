@@ -626,6 +626,11 @@ static inline int next_char(struct lexer_state *ls)
 		if (c == '\\' && char_lka1(ls) == '\n') {
 			ls->line ++;
 			next_fifo_char(ls);
+		} else if (c == '\r' && char_lka1(ls) == '\n') {
+			ls->line ++;
+			next_fifo_char(ls);
+			c = '\n';
+			return c;
 		} else {
 			ls->last = c;
 			return c;
