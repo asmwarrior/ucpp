@@ -113,3 +113,4 @@ mem.o: mem.h
 	@$(CC) $(CFLAGS) -c mem.c
 nhash.o: nhash.h mem.h
 	@$(CC) $(CFLAGS) -c nhash.c
+

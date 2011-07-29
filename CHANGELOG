@@ -8,7 +8,9 @@ ucpp-1.3.1
 * Fixed Issue 7, STD_MACROS & STD_ASSERTS undefined when trying to
   build ucpp -DSTAND_ALONE.
   (http://code.google.com/p/ucpp/issues/detail?id=7)
-* Build ucpp & libucpp with 'make'.
+* Build ucpp & libucpp with 'make', by default.
+* Converted svn repo to git at code.google.com/p/ucpp
 
 ucpp-1.3
 * Original import into svn at code.google.com/p/ucpp
+
